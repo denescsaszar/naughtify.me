@@ -21,6 +21,8 @@ const AuthModal = ({ setShowModal, isSignUp }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    console.log("handleSubmit");
+
     try {
       if (isSignUp && password !== confirmPassword) {
         setError("Passwords need to match!");
@@ -51,7 +53,7 @@ const AuthModal = ({ setShowModal, isSignUp }) => {
         ⓧ
       </div>
 
-      <h2 className="logIn">{isSignUp ? "CREATE ACCOUNT" : "LOG IN"}</h2>
+      <h2>{isSignUp ? "CREATE ACCOUNT" : "LOG IN"}</h2>
       <p>
         By clicking Log In, you agree to our terms. Learn how we process your
         data in our Privacy Policy and Cookie Policy.

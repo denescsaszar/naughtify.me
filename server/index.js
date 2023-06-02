@@ -77,10 +77,11 @@ app.post("/login", async (req, res) => {
     );
 
     if (user && correctPassword) {
-      const token = jwt.sign(user, email, {
+      console.log("user", user);
+      const token = jwt.sign({ id: user._id }, email, {
         expiresIn: 60 * 24,
       });
-      res.status(201).json({ token, userId: user.user_id });
+      return res.status(201).json({ token, userId: user.user_id });
     }
 
     res.status(400).json("Invalid Credentials");
