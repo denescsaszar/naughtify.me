@@ -31,7 +31,7 @@ const OnBoarding = () => {
       });
       console.log(response);
       const success = response.status === 200;
-      if (success) navigate("/dashboard");
+      if (success) navigate("/Dashboard");
     } catch (err) {
       console.log(err);
     }

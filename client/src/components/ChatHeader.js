@@ -1,4 +1,5 @@
 import { useCookies } from "react-cookie";
+import { redirect } from "react-router-dom";
 
 const ChatHeader = ({ user }) => {
   const [cookies, setCookie, removeCookie] = useCookies(["user"]);
@@ -6,7 +7,8 @@ const ChatHeader = ({ user }) => {
   const logout = () => {
     removeCookie("UserId", cookies.UserId);
     removeCookie("AuthToken", cookies.AuthToken);
-    window.location.reload();
+    window.location.reload("/");
+    return redirect("/");
   };
 
   return (

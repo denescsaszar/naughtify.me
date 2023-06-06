@@ -1,5 +1,5 @@
-import whiteLogo from "../assets/images/white-logo.png";
-import colorLogo from "../assets/images/black-logo.png";
+// import whiteLogo from "../assets/images/white-logo.png";
+// import colorLogo from "../assets/images/black-logo.png";
 import qrLogo from "../assets/images/QR-logo.gif";
 
 const Nav = ({ authToken, minimal, setShowModal, showModal, setIsSignUp }) => {

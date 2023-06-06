@@ -40,27 +40,28 @@ h3 {
 
 .primary-button {
   color: rgb(255, 255, 255);
+  font-style: italic;
   text-transform: uppercase;
   font-size: 15px;
-  background: linear-gradient(45deg, #da96ce, #c34fba);
+  background: linear-gradient(15deg, #fd5275, #fdd72f);
   padding: 12px 30px;
   border-radius: 30px;
   border: none;
 }
 
 .primary-button:hover {
-  background: linear-gradient(260deg, #c34fba, #da96ce);
+  background: linear-gradient(260deg, #fdd72f, #fd5275);
 }
 
 .secondary-button {
   color: white;
-  background: linear-gradient(260deg, #c34fba, #da96ce);
+  background: linear-gradient(260deg, #fd5275, #fdd72f);
   font-weight: 500;
   font-size: 15px;
   text-transform: uppercase;
   padding: 12px 30px;
   border-radius: 30px;
-  border: solid 2px #c34fba;
+  border: solid 2px #fdd72f;
   margin: 6px;
 }
 
@@ -75,15 +76,16 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #94b0dc;
+  background-color: black;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 nav .nav-button {
-  color: #c34fba;
-  background-color: #94b0dc;
-  font-size: 20px;
+  font-family: "cosmo-red";
+  font-style: italic;
+  background-color: black;
+  font-size: 40px;
   padding: 10px 20px;
   border-radius: 10px;
   border: none;
@@ -91,13 +93,13 @@ nav .nav-button {
 }
 
 nav .nav-button:disabled {
-  background-color: #c34fba;
+  background-color: black;
   color: #94b0dc;
 }
 
 nav .logo-container {
-  width: 100px;
-  margin: 15px;
+  width: 120px;
+  margin: 50px;
 }
 
 nav .logo-container .logo {
@@ -109,7 +111,8 @@ nav .logo-container .logo {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background: #f3f3f3;
+  /* background: #f3f3f3; */
+  background: black;
 }
 
 .home {
@@ -126,7 +129,7 @@ nav .logo-container .logo {
   margin-right: auto;
   max-width: 360px;
   height: 600px;
-  background-color: #c1d4e7;
+  background-color: #0ccfeb;
   border-radius: 10px;
   padding: 40px;
 }
@@ -148,7 +151,7 @@ nav .logo-container .logo {
   padding: 8px;
   margin: 8px;
   font-size: 17px;
-  background-color: #f7d295;
+  background-color: #fdd72f;
   border-radius: 5px;
 }
 s
@@ -243,6 +246,7 @@ s
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #fdd72f;
 }
 
 .swipe {
@@ -283,7 +287,7 @@ s
 }
 
 .chat-container .chat-container-header {
-  background: #94b0dc;
+  background: black;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -292,8 +296,8 @@ s
 
 .chat-container .option {
   border: none;
-  background-color: rgb(255, 255, 255);
-  border-bottom: solid 4px rgb(243, 33, 33);
+  background-color: #fd5275;
+  border-bottom: solid 4px rgb(255, 255, 255);
   font-size: 20px;
   margin: 2px;
   padding: 10px;
@@ -307,9 +311,10 @@ s
 .chat-container .log-out-icon {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   color: rgb(255, 255, 255);
   font-family: "cosmo-red";
+  font-size: 20px;
 }
 
 .img-container {
